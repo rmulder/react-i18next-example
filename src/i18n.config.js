@@ -17,7 +17,17 @@ i18n
     },
     fallbackLng: "en",
     interpolation: {
-      escapeValue: false // No need to escape for react
+      escapeValue: false, // No need to escape for react
+      /**
+       * Add interpolation format method to customize the formatting
+       */
+      format: (value, format, lng) => {
+        if (format === 'uppercase') {
+          return value.toUpperCase();
+        }
+
+        return value;
+      }
     }
   });
   
