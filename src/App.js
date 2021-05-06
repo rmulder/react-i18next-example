@@ -17,11 +17,11 @@ const App = () => {
     <div>
       <label>
         English
-        <input type="radio" value="en" checked={selectedLanguage === 'en'} onClick={handleLanguageSelect} />
+        <input type="radio" value="en" checked={selectedLanguage === 'en'} onChange={handleLanguageSelect} />
       </label>
       <label>
         中文
-        <input type="radio" value="zh" checked={selectedLanguage === 'zh'} onClick={handleLanguageSelect} />
+        <input type="radio" value="zh" checked={selectedLanguage === 'zh'} onChange={handleLanguageSelect} />
       </label>
       <p>{t('selectedLanguage', { language: selectedLanguage })}</p>
       <p>{t('numOfTimesSwitchingLanguage', { count })}</p>
