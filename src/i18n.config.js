@@ -5,19 +5,20 @@ import en from './en.json';
 import zh from './zh.json';
 
 i18n
-  .use(initReactI18next) // passes i18n down to react-i18next
+  .use(initReactI18next)
   .init({
     resources: {
       en: {
-        translation: en, // Add translation for English
+        translation: en,
       },
       zh: {
-        translation: zh, // Add translation for Chinese
+        translation: zh
       },
     },
     fallbackLng: "en",
+
     interpolation: {
-      escapeValue: false, // No need to escape for react
+      escapeValue: false,
       /**
        * Add interpolation format method to customize the formatting
        */
