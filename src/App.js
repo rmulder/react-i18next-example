@@ -31,7 +31,7 @@ const App = () => {
         中文
         <input type="radio" value="zh" checked={selectedLanguage === 'zh'} onClick={handleLanguageSelect} />
       </label>
-      <p>Your selected language is: {selectedLanguage} </p>
+      <p>{t('selectedLanguage', { language: selectedLanguage })}</p>
       <p>Your have switch language for 0 times</p>
       {/**
         * Use the key in the language file to get the translated text
